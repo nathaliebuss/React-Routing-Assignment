@@ -1,0 +1,39 @@
+.characterDetailContainer {
+  margin: 40px auto;
+  padding: 40px;
+  border: 2px solid #0b9dc5;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 188, 240, 0.1);
+  color: #303539;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 380;
+}
+
+.name {
+  font-size: 3.5rem;
+  color: #dbc11e;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.charDescription {
+  padding: 12px;
+}
+
+.powers {
+  padding: 12px;
+}

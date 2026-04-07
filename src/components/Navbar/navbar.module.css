@@ -1,0 +1,144 @@
+.navContainer {
+  background-color: #303539;
+  color: #e1ebed;
+  display: flex;
+  flex-direction: row;
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  justify-content: space-around;
+  padding: 18px;
+}
+.headerContainer {
+  background-color: #00bcf0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 15px 30px;
+  background-color: #fff;
+  border-bottom: 2px solid #2a52be;
+}
+
+.burgerImg {
+  width: 30px;
+  height: auto;
+}
+
+.hamburgerMenu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.iconSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 20px;
+}
+
+.iconImage {
+  height: 50px;
+  width: auto;
+}
+
+.title {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 8px;
+  text-align: left;
+  
+}
+
+.navItem {
+  color: #e1ebed;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  cursor: pointer;
+  color: #ffe556;
+}
+
+/* active class */
+.active {
+  color: #00bcf0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.dropMenu {
+  background-color: #303539;
+  color: #e1ebed;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 14px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.dropMenuTrigger p {
+  color: #e1ebed;
+  margin: 0;
+  position: relative;
+}
+
+/* ---MEDIA QUEROES--- */
+@media (max-width: 768px) {
+  .hamburgerMenu {
+    display: block;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+  .headerContainer {
+    position: sticky;
+  }
+
+  .navContainer {
+    align-items: center;
+    background-color: #303539;
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 0;
+    position: sticky;
+    width: 100%;
+  }
+
+  .navItem {
+    font-size: 1rem;
+  }
+
+  .navOpen {
+    display: flex;
+    border-top: 3px solid #ffde00;
+  }
+
+  .iconImage {
+    height: 35px;
+  }
+
+  .dropMenu {
+    background-color: #25292d;
+    padding: 10px 0;
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+}

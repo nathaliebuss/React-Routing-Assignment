@@ -1,0 +1,10 @@
+.footer {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2em;
+  color: #00bcf0;
+  background-color: #303539;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
