@@ -21,6 +21,11 @@
 }
 
 /* --- MEDIA QUERIES --- */
+@media (max-width: 1200px) {
+    .heroGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width: 768px) {
   .heroTitle {
     margin: 10px;

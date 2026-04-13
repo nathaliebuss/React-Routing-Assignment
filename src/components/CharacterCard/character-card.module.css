@@ -76,6 +76,7 @@
 }
 
 /* ---MEDIA QUERIES--- */
+
 @media (max-width: 430px) {
   .characterCardContainer {
     width: 300px;
