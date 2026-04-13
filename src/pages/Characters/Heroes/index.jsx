@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom'
 import style from "./heroes.module.css";
-import characters from "../../../data/characters";
+import Characters from "../../../data/characters";
 import CharacterCard from "../../../components/CharacterCard";
 
 const Heroes = () => {
     //get the heroes from the data file
-  const heroList = characters.filter((character) => character.status === "hero",);
+  const heroList = Characters.filter((character) => character.status === "hero",);
 
   return (
     <div className={style.heroesContainer}>

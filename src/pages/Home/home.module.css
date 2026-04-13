@@ -1,55 +1,55 @@
 .homeContainer {
-  min-height: 100vh;
   background-color: #e1ebed;
   color: #1a1a1a;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .bannerContainer {
-  position: relative;
-  width: 100%;
+  border-bottom: 5px solid #ffde00;
   height: 300px;
   overflow: hidden;
-  border-bottom: 5px solid #ffde00;
+  position: relative;
+  width: 100%;
 }
 
 .banner {
-  width: 100%;
+  filter: brightness(60%);
   height: 100%;
   object-fit: cover;
-  filter: brightness(60%);
+  width: 100%;
 }
 
-.bannerOverlay {
-  left: 50%;
+.textOverlay {
   position: absolute;
-  text-align: center;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 .title {
   color: #ffde00;
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
-  margin: 0;
   text-shadow: 3px 3px 0px #e62429;
   text-transform: uppercase;
 }
 
 .heroContent {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
   padding: 50px 20px;
   text-align: center;
 }
 
 .description {
+  color: #444;
   font-family: "Figtree", sans-serif;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #444;
   margin-bottom: 20px;
 }
 
@@ -71,5 +71,6 @@
 
   .title {
     font-size: 2rem;
+    margin: 0 auto;
   }
 }

@@ -1,3 +1,12 @@
+.headerContainer {
+  background-color: #00bcf0;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .navContainer {
   background-color: #303539;
   color: #e1ebed;
@@ -8,42 +17,35 @@
   justify-content: space-around;
   padding: 18px;
 }
-.headerContainer {
-  background-color: #00bcf0;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-}
 
 .header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 15px 30px;
+  align-items: center;
   background-color: #fff;
   border-bottom: 2px solid #2a52be;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
 
 .burgerImg {
-  width: 30px;
   height: auto;
+  width: 30px;
 }
 
 .hamburgerMenu {
-  display: none;
   background: none;
   border: none;
-  cursor: pointer;
   color: white;
+  cursor: pointer;
+  display: none;
   font-size: 1.5rem;
 }
 
 .iconSection {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  display: flex;
   gap: 12px;
+  justify-content: space-between;
   padding: 10px 20px;
 }
 
@@ -58,7 +60,6 @@
   font-weight: 500;
   padding: 8px;
   text-align: left;
-  
 }
 
 .navItem {
@@ -106,6 +107,7 @@
   .title {
     font-size: 1.6rem;
   }
+
   .headerContainer {
     position: sticky;
   }

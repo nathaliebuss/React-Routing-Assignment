@@ -10,7 +10,7 @@ const About = () => {
           alt="Invincible Show Banner"
           className={style.banner}
         />
-        <div className={style.bannerOverlay}>
+        <div className={style.textOverlay}>
           <h1 className={style.title}>About the Show</h1>
         </div>
       </div>
@@ -37,9 +37,7 @@ const About = () => {
         </p>
 
         <blockquote className={style.quote}>
-          "When I Was A Kid, I Always Wanted To Be My Dad. What If That Happens?
-          What If I Become Him And I Don't Even Know It?" -Mark Grayson, Season
-          1.
+          "What If That Happens? What If I Become Him And I Don't Even Know It?" -Mark Grayson, Season1.
         </blockquote>
       </div>
     </div>

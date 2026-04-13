@@ -6,7 +6,7 @@ const Home = () => {
     <div className={style.homeContainer}>
       <div className={style.bannerContainer}>
         <img src={bannerImg} alt="Invincible Banner" className={style.banner} />
-        <div className={style.bannerOverlay}>
+        <div className={style.textOverlay}>
           <h1 className={style.title}>Welcome to the Invincible Website!</h1>
         </div>
       </div>

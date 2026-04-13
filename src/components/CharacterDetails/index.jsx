@@ -13,7 +13,7 @@ const CharacterDetail = () => {
         <h1 className={style.name}>{character.name}</h1>
         <img className={style.img} src={getImageURL(character.image)} alt={character.name} />
         <p className={style.charDescription}>{character.description}</p>
-        <h3 className={style.powers}>Powers:</h3>
+        <h3 className={style.powersTitle}>Powers:</h3>
         <p className={style.powers}>
          {character.powers.map((power, index) => (
              <li key={index} className={style.powerItem}> {power} </li>))}

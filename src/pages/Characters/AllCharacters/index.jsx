@@ -8,7 +8,7 @@ const AllCharacters = () => {
 
   return (
     <div className={style.allCharContainer}>
-      <h1 className={style.allCharTitle}>Season 1 Characters</h1>
+      <h1 className={style.allCharTitle}>Season 1 All Characters</h1>
       <div className={style.allCharGrid}>
         {fullCharList.map((allChar) => (
           <NavLink

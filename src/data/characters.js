@@ -1,4 +1,4 @@
-const characters = [
+const Characters = [
   {
     id: "invincible",
     name: "Mark Grayson",
@@ -18,7 +18,7 @@ const characters = [
     role: "Main Cast",
     description:
       "Nolan is a powerful Viltrumite warrior who was sent to Earth to serve as its greatest superhero. He hides a dark imperialist agenda from his human family while pretending to be a benevolent guardian. His complex loyalty to his home planet eventually leads to a violent confrontation with his own son.",
-    powers: ["Nigh-omnipotent strength", "Interstellar flight", "Longevity"],
+    powers: ["Superhuman strength", "Interstellar flight", "Longevity", "Nigh-Invulnerability"],
     status: "enemy",
     image: "omniman-nolan.jpg"
   },
@@ -148,21 +148,20 @@ const characters = [
   },
 
 ];
-export default characters;
+export default Characters;
 
 
+// filters through charachters to get all the heores
 export const getHeroCharacter = selectedHero => {
-  return characters.filter(( persons ) => persons.status === selectedHero)
+  return Characters.filter(( persons ) => persons.status === selectedHero)
 }
 
+// filters through charachters to get all enemies
 export const getEnemyCharacter = selectedEnemy => {
-  return characters.filter(( persons ) => persons.status === selectedEnemy)
+  return Characters.filter(( persons ) => persons.status === selectedEnemy)
 }
+
 
 export const getCharacterById = (id) => {
-  return characters.find(( persons ) => persons.id === id);
+  return Characters.find(( persons ) => persons.id === id);
 };
-
-// export const getCharactersByStatus = (statusType) => {
-//   return characters.filter(char => char.status === statusType);
-// };

@@ -1,31 +1,31 @@
 .aboutContainer {
-  min-height: 100vh;
   background-color: #e1ebed;
   color: #1a1a1a;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .bannerContainer {
-  position: relative;
-  width: 100%;
+  border-bottom: 5px solid #ffde00;
   height: 300px;
   overflow: hidden;
-  border-bottom: 5px solid #ffde00;
+  position: relative;
+  width: 100%;
 }
 
 .banner {
-  width: 100%;
+  filter: brightness(60%);
   height: 100%;
   object-fit: cover;
-  filter: brightness(60%);
+  width: 100%;
 }
 
-.bannerOverlay {
-  left: 50%;
+.textOverlay {
+  left: 30%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  top: 40%;
 }
 
 .title {
@@ -38,38 +38,39 @@
 }
 
 .synopsisSection {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
   line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 40px 20px;
 }
 
 .subtitle {
-  font-family: "New Amsterdam", sans-serif;
+  border-left: 5px solid #ffde00;
   color: #2a52be;
+  font-family: "New Amsterdam", sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
-  border-left: 5px solid #ffde00;
   padding-left: 15px;
+  letter-spacing: 1.2px;
 }
 
 .text {
+  color: #444;
   font-family: "Figtree", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: #444;
 }
 
 .quote {
-  font-family: "Josefin Sans", sans-serif;
-  font-style: italic;
-  font-style: italic;
-  font-size: 1.3rem;
+  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
   color: #e62429;
-  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
   margin-top: 40px;
   padding: 20px;
-  border-top: 1px solid #ddd;
+  text-align: center;
 }
 
 /*---MEDIA QUERIES---*/
@@ -84,5 +85,6 @@
 
   .title {
     font-size: 2rem;
+    margin:auto;
   }
 }
