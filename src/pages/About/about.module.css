@@ -1,91 +1,90 @@
 .aboutContainer {
-  background-color: #e1ebed;
-  color: #1a1a1a;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    background-color: #e1ebed;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
 }
 
 .bannerContainer {
-  border-bottom: 5px solid #ffde00;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+    border-bottom: 5px solid #ffde00;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .banner {
-  filter: brightness(60%);
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
+    filter: brightness(60%);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .textOverlay {
   position: absolute;
-  display: flex;
-  top: 40%;
-  justify-content: center;
-  left: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 .title {
   color: #ffde00;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
-  margin: 0 auto;
+  font-size: 3rem;
   text-shadow: 3px 3px 0px #e62429;
   text-transform: uppercase;
 }
 
 .synopsisSection {
-  line-height: 1.8;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 40px 20px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px 20px;
 }
 
 .subtitle {
-  border-left: 5px solid #ffde00;
-  color: #2a52be;
-  font-family: "New Amsterdam", sans-serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  padding-left: 15px;
-  letter-spacing: 1.2px;
+    border-left: 5px solid #ffde00;
+    color: #2a52be;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    letter-spacing: 1.2px;
 }
 
 .text {
-  color: #444;
-  font-family: "Figtree", sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+    color: #444;
+    font-family: "Figtree", sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .quote {
-  border-bottom: 2px solid #ddd;
-  border-top: 2px solid #ddd;
-  color: #e62429;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.3rem;
-  font-style: italic;
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+    color: #e62429;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
 }
 
 /*---MEDIA QUERIES---*/
 @media (max-width: 768px) {
-  .bannerWrapper {
-    height: 200px;
-  }
+    .bannerWrapper {
+        height: 200px;
+    }
 
-  .description {
-    font-size: 1.2rem;
-  }
+    .description {
+        font-size: 1.2rem;
+    }
 
-  .title {
-    font-size: 2rem;
-    margin:auto;
-  }
+    .title {
+        font-size: 2rem;
+        margin: auto;
+    }
 }
