@@ -10,12 +10,14 @@ const Navbar = () => {
     const [showBurgerMenu, setShowBurgerMenu] = useState(false)     //buger menu state, false=standard not showing
 
         // burger menu handleClick
-    const toggleBurgerMenu = () => setShowBurgerMenu(!showBurgerMenu);
-
+    const toggleBurgerMenu = () => { 
+        setShowBurgerMenu(!showBurgerMenu);
+    }
+    // drop down menu handleClick
     const dropMenuClick = () => {
         setShowDropMenu(!showDropMenu)
     }
-     
+
     // closing after clicking the (burger)menu
     const closeAll = () => {
         setShowBurgerMenu(false);
@@ -30,6 +32,8 @@ const Navbar = () => {
                   className={style.iconImage}
                   src={icon}
                   alt="guy in a blue, black and yellow suit with black hair"
+                  width="200px"
+                  height="200px"
                 />
                 <h1 className={style.title}>Invincible Website</h1>
                     <button className={style.hamburgerMenu} onClick={toggleBurgerMenu}>
@@ -45,14 +49,13 @@ const Navbar = () => {
                         <p className={style.navItem} onClick={dropMenuClick} >Characters</p>
                             {showDropMenu && 
                                 <div className={style.dropMenu}>
-                                    {/* <NavLink className={({ isActive }) => isActive ? style.active : style.navItem} to="/characters">Characters</NavLink>  */}
                                     <NavLink className={({ isActive }) => isActive ? style.active : style.navItem} to="/characters/heroes" onClick={closeAll}>Heroes</NavLink>
                                     <NavLink className={({ isActive }) => isActive ? style.active : style.navItem} to="/characters/enemies" onClick={closeAll}>Enemies</NavLink>
                                     <NavLink className={({ isActive }) => isActive ? style.active : style.navItem} to="/characters/all-characters" onClick={closeAll}>All Characters</NavLink>
                                 </div>
                             }
                         </div>
-                        <NavLink className={({ isActive }) => isActive ? style.active : style.navItem} to="/about">About</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? style.active : style.navItem} to="/about" onClick={closeAll}>About</NavLink>
                     </nav>
                 </div>
               </header>
