@@ -1,7 +1,7 @@
 import { useState} from 'react'
 import { NavLink} from 'react-router-dom'
-import icon from "../../assets/Images/icon.png";     //invincible icon
-import burgerIcon from '../../assets/Images/menu.png'   //burger menu icon
+import icon from "../../assets/images/icon.png";     //invincible icon
+import burgerIcon from '../../assets/images/menu.png'   //burger menu icon
 import style from './navbar.module.css'
 
 
