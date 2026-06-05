@@ -14,7 +14,7 @@ const AllCharacters = () => {
           <NavLink
             key={allChar.id}
             to={`/characters/${allChar.id}`}
-             className={style.cardText} ><CharacterCard {...allChar} />
+            className={style.cardText} ><CharacterCard {...allChar} />
           </NavLink>
         ))}
       </div>
