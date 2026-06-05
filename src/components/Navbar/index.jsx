@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className={style.iconSection}>
           <img
             className={style.iconImage}
-            src={getImageURL("icon.png")}
+            src={getImageURL('icon.png')}
             alt="guy in a blue, black and yellow suit with black hair"
             width="200px"
             height="200px"
@@ -39,7 +39,7 @@ const Navbar = () => {
               "✕"
             ) : (
               <img
-                src={getImageURL("menu.png")}
+                src={getImageURL('menu.png')}
                 alt="menu"
                 className={style.burgerImg}
               />
